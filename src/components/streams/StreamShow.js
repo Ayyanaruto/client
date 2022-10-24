@@ -24,7 +24,7 @@ class StreamShow extends React.Component{
     }
     buitldPlayer=()=>{
         const {id}=this.props.match.params
-        const url=(`http://rtmp-server-ayyan.herokuapp.com/live/${id}.flv`||`http://localhost:8000/live/${id}.flv`)
+        const url=`https://rtmp-server-ayyan.herokuapp.com/live/${id}.flv`||`http://localhost:8000/live/${id}.flv`
         if(this.player||!this.props.stream){
             return
         }
