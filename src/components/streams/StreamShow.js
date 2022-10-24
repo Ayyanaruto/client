@@ -30,7 +30,7 @@ class StreamShow extends React.Component{
         }
         this.player=flv.createPlayer({
             type:'flv',
-            url:`http://rtmp-server-ayyan.herokuapp.com/live/${id}.flv`
+            url:url
         })
         this.player.attachMediaElement(this.videoRef.current)
         this.player.load()
